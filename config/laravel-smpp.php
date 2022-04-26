@@ -39,11 +39,11 @@ return [
 
     'providers' => [
         'example' => [
-            'host' => 'localhost',
-            'port' => 9999,
+            'host' => env('SMPP_PROVIDER_HOST'),
+            'port' => env('SMPP_PROVIDER_PORT'),
             'timeout' => 90,
-            'login' => 'login',
-            'password' => 'password'
+            'login' => env('SMPP_PROVIDER_LOGIN'),
+            'password' => env('SMPP_PROVIDER_PASSWORD')
         ]
     ],
 
